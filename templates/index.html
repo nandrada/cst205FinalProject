@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <title>Image Filter Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="static/styles.css">
+
+</head>
+
+
+<body>
+
+<!-- # the section below is the jumbotron header section -->
+<div class="header jumbotron text-center">
+  <h1>Image Filter Website Imporium</h1>
+  <p>Upload an image and apply one of the given filters</p>
+</div>
+
+<!--form for file upload and styling, this sends the POST Request-->
+<div>
+    <h1>Upload new File</h1>
+
+    <form method=post enctype=multipart/form-data>
+        <input type=file name=file></input>
+        
+        <div>Please select a filter if you wish to apply an image filter:</div>
+
+        <select name = "filter_dropdown">
+          <option value = "None">None</option>
+          <option value = "Cool">Cool</option>
+          <option value = "Warm">Warm</option>
+          <option value = "Negative">Negative</option>
+          <option value = "Sepia">Sepia</option>
+          <option value = "Grayscale">Grayscale</option>
+          <option value = "Red">Red</option>
+          <option value = "Green">Green</option>
+          <option value = "Lighten">Lighten</option>
+          <option value = "Darken">Darken</option>
+          <option value = "Thumbnail">Thumbnail</option>
+        </select>
+
+        <input style = "color: black" type=submit value=Upload></input>
+    </form>
+
+    <br />
+
+    <a href="http://127.0.0.1:5000/newpage1">Go to Gallery</a>
+</div>
+
+</body>
+</html>

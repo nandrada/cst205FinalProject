@@ -1,0 +1,28 @@
+.header{
+	background-color: #a0d6b4;
+	color: black;
+}
+
+.upload-file{
+	height: 100px;
+    width: 500px;
+    margin: -20px -50px;
+    top:50%;
+    left: 35%;
+    position: relative;
+}
+
+body {
+	background-color: #5f9ea0;
+	font-size: 18px;
+	text-align: center;
+	color: black;
+}
+
+form {
+	text-align: center;
+}
+
+a {
+	color: darkblue;
+}
